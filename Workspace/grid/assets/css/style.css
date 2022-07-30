@@ -1,0 +1,54 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.item {
+    margin-top: 16px;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    min-height: 200px;
+    line-height: 200px;
+    background-color: orange;
+}
+
+.col .l-3 {
+    padding-left: 4px;
+
+    padding-right: 4px;
+
+} 
+
+.main {
+    display: flex;
+    padding: 0px 32px;
+}
+
+.sidebar {
+    width: 300px;
+    background-color: chocolate;
+}
+
+.content {
+    flex: 1;
+  
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hiden-on-tablet {
+        display: none;
+    }
+}
+
+@media (max-width: 739px)  {
+    .hiden-on-mobile {
+        display: none;
+    }
+}
+
+.card__sucess  {
+    background-color: green;
+}
+

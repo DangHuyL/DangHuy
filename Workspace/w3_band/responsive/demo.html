@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+<style>
+    
+    div {
+        text-align: center;
+    }
+
+    .pc,
+    .tablet,
+    .mobile {
+        font-size: 68px;
+        display: none;
+    }
+
+    /* PC */
+    @media (min-width:1024px) {
+        .pc {
+            display: block;
+        }
+    }
+
+     /* Tablet */
+     @media (min-width:740px) and (max-width: 1023px) {
+        .tablet {
+            display: block;
+        }
+    }
+
+    /* PC */
+    @media (max-width:740px) {
+        .mobile {
+            display: block;
+        }
+    }
+
+
+
+/* 
+    PC: >= 1024PX
+    TABLET: >=740PX & <1024PX
+    MOBILE: <740PX
+ */
+
+</style>
+</head>
+<body>
+    <div>
+        <h2 class="pc">PC</h2>
+        <h2 class="tablet">TABLET</h2>
+        <h2 class="mobile">MOBILE</h2> 
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+body > div {
+  margin: 5% auto ;
+  max-width: 720px;
+}
+
+.tabs {
+  position: relative;
+  display: flex;
+  list-style: none;
+
+}
+
+.tabs .line {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 6px;
+  background-color: #c23564;
+  border-radius: 15px;
+  transition: all 0.3 ease;
+}
+
+.tab-item {
+  min-width: 130px;
+  padding: 16px 20px 11px 20px;
+  font-size: 20px;
+  color: #c23564;
+  text-align: center;
+  opacity: 0.6;
+  cursor: pointer;
+  border-bottom: 5px solid transparent;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.tab-item:hover {
+  opacity: 1;
+  background-color: rgba(194, 53, 100, 0.05);
+  border-color: rgba(194, 53, 100, 0.1);
+}
+
+.tab-icon {
+  font-size: 24px;
+  width: 32px;
+  margin-right: 6px;
+}
+
+.tab-item.active {
+  opacity: 1;
+}
+
+/* tabs-content */
+
+.tabs-content {
+  padding: 28px 0px;
+}
+
+.tab-pane > h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.tab-pane {
+  color: #333;
+  display: none;
+}
+
+.tab-pane > P {
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+.tab-pane.active {
+  display: block;
+}
